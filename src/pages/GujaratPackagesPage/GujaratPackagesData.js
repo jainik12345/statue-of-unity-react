@@ -85,6 +85,7 @@ export const GujaratPackagesTourGuideData = [
       },
 
       {
+        
         Head: "Rate Specification	",
         Value: [
           "Per Person with CP (Stay + Breakfast)	",
