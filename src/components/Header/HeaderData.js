@@ -48,18 +48,20 @@ export const navLinks = [
     path: "/sou-tickets",
   },
 
-  {
-    label: "Gujarat Packages",
-    path: "/gujarat-packages",
-    dropdown: [
-      { label: "Gujarat Tour 3N / 4D", path: "/gujarat-packages/3n4d" },
-      { label: "Gujarat Tour 4N / 5D", path: "/gujarat-packages/4n5d" },
-      { label: "Gujarat Tour 5N / 6D", path: "/gujarat-packages/5n6d" },
-      { label: "Gujarat Tour 6N / 7D", path: "/gujarat-packages/6n7d" },
-      { label: "Gujarat Tour 7N / 8D", path: "/gujarat-packages/7n8d" },
-      { label: "Gujarat Tour 11N / 12D", path: "/gujarat-packages/11n12d" },
-    ],
-  },
+  // {
+  //   label: "Gujarat Packages",
+  //   path: "/gujarat-packages",
+  //   dropdown: [
+  //     { label: "Gujarat Tour 3N / 4D", path: "/gujarat-packages/3n4d" },
+  //     { label: "Gujarat Tour 4N / 5D", path: "/gujarat-packages/4n5d" },
+  //     { label: "Gujarat Tour 5N / 6D", path: "/gujarat-packages/5n6d" },
+  //     { label: "Gujarat Tour 6N / 7D", path: "/gujarat-packages/6n7d" },
+  //     { label: "Gujarat Tour 7N / 8D", path: "/gujarat-packages/7n8d" },
+  //     { label: "Gujarat Tour 11N / 12D", path: "/gujarat-packages/11n12d" },
+  //   ],
+  // },
+
+
   //   {
   //   label: "Gujarat Packages",
   //   path: "/gujarat-packages",
@@ -72,6 +74,20 @@ export const navLinks = [
   //     { label: "Gujarat Tour 11 12D"  },
   //   ],
   // },
+
+  {
+  label: "Gujarat Packages",
+  path: "/gujarat-packages",
+  dropdown: [
+    { label: "Gujarat Tour 3N 4D" },
+    { label: "Gujarat Tour 4N 5D" },
+    { label: "Gujarat Tour 5N 6D" },
+    { label: "Gujarat Tour 6N 7D" },
+    { label: "Gujarat Tour 7N 8D" },
+    { label: "Gujarat Tour 11N 12D" },
+  ],
+},
+
 
   {
     label: "Contact",

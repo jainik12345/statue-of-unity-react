@@ -200,12 +200,7 @@
 //   return <RouterProvider router={Router} />;
 // };
 
-
-
-
-
-// =====================================================jainik's code 
-
+// =====================================================jainik's code
 
 import { Outlet } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -239,6 +234,7 @@ import { VillaEuphoriaResortGallery } from "../../pages/GalleryPage/VillaEuphori
 import { RiverViewTentResort } from "../../pages/StayInTentPage/RiverViewTentResort/RiverViewTentResort.jsx";
 import { RiverViewTentResortGallery } from "../../pages/GalleryPage/RiverViewTentResortGallery/RiverViewTentResortGallery.jsx";
 import { ScrollToTopBtn } from "../../components/ScrollToTopBtn/ScrollToTopBtn.jsx";
+import { GujaratPackagesDropDown } from "../../pages/GujaratPackagesPage/GujaratPackagesDropDown/GujaratPackagesDropDown.jsx";
 // import { GujaratTour4N5D } from "../../pages/GujaratPackagesPage/GujaratTour4N5D/GujaratTour4N5D.jsx";
 // import { GujaratTour5N6D } from "../../pages/GujaratPackagesPage/GujaratTour5N6D/GujaratTour5N6D.jsx";
 // import { GujaratTour3N4D } from "../../pages/GujaratPackagesPage/GujaratTour3N4D/GujaratTour3N4D.jsx";
@@ -286,16 +282,18 @@ export const RouteComponents = () => {
           element: <SouTickets />,
         },
 
-
         // {
         //   path: "/gujarat-packages",
         //   element: <GujaratPackages />,
         // },
 
+        { path: "gujarat-packages", element: <GujaratPackages /> },
 
-        { path: "/:PathName", element: <GujaratPackages /> },
-
-
+        // { path: "gujarat-packages/:PathName", element: <GujaratPackagesDropDown /> },
+        {
+          path: "/gujarat-packages/:pathName",
+          element: <GujaratPackagesDropDown />,
+        },
 
         {
           path: "/contact",
@@ -416,6 +414,3 @@ export const RouteComponents = () => {
 
   return <RouterProvider router={Router} />;
 };
-
-
-
